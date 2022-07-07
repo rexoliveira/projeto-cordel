@@ -11,6 +11,7 @@
     --fonte2: 'Passion One', cursive;
     /* Para conteudo */
     --fonte3: 'Sriracha', cursive;
+    /* Origim paleta de cores: https://color.adobe.com/fundo-cordel-color-theme-20299227 #AdobeColor #AdobeColorThemes  */
     --cor-cordel-fundo:#f2dec4c3;
     --cor-cordel-fonte0:#A64B17;
     --cor-cordel-fonte1:#262223;
@@ -52,6 +53,7 @@ header>h1 {
 header>p {
     /*Minha - Ajuste para o header fixo*/
     padding-bottom: 50px;
+
 }
 
 header a, footer a {
