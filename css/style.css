@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* Foi usado o reset, o normalize não funcionou corretamente */
+
+:root {
+    /* Padrão -> cabeçalho e rodapé*/
+    --fonte1: Verdana, Genova, Tahoma, sans-serif;
+    /* Para titulos */
+    --fonte2: 'Passion One', cursive;
+    /* Para conteudo */
+    --fonte3: 'Sriracha', cursive;
+    --cor-cordel-fundo:#f2dec4c3;
+    --cor-cordel-fonte0:#A64B17;
+    --cor-cordel-fonte1:#262223;
+    --cor-cordel-fonte2:#F2F2F2;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: var(--cor-cordel-fonte0);
+    text-align: center;
+
+    /* Minha personalização --header fixo*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 1px 1px 4px 2px rgba(101, 97, 97, 0.845);
+}
+
+header>h1 {
+    padding-top: 50px;
+    /* Todas as letras maiuscula */
+    /* text-transform: uppercase; */
+    /* Letras maiusculas, mas as primeiras letras são maiores */
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    /* O tamanho da fonte baseado na largura da tela */
+    /* Não é melhor aplicação */
+    font-size: 7vw;
+}
+
+header>p {
+    /*Minha - Ajuste para o header fixo*/
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: var(--cor-cordel-fundo);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 160px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.8vw;
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: var(--cor-cordel-fundo);
+    color: var(--cor-cordel-fonte1);
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: var(--cor-cordel-fonte2);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem>p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../image/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../image/background002.jpg);
+    background-position: right center;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
